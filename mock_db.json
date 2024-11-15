@@ -1,0 +1,26 @@
+{
+    "users": [
+        { "id": 1, "name": "Сергей", "email": "some_email@example.com" }
+    ],
+    "entries": [
+        { "id": 2, "userId": 1, "categoryId": 2, "accountId": 2, "type": "income", "amount": 35000, "title": "Зарплата на заводе", "createdAt": "2024-11-15T17:10:00.000Z" },
+        { "id": 1, "userId": 1, "categoryId": 6, "accountId": 1, "type": "expense", "amount": 1000, "title": "Такси в Таганку", "createdAt": "2024-11-15T18:00:00.000Z" },
+        { "id": 1, "userId": 1, "categoryId": 5, "accountId": 1, "type": "expense", "amount": 2000, "title": "Вкусно похавать", "createdAt": "2024-11-15T18:08:00.000Z" },
+        { "id": 2, "userId": 1, "categoryId": 3, "accountId": 1, "type": "income", "amount": 20000, "title": "Листинг хамстер комбат", "createdAt": "2024-11-16T08:00:00.000Z" }
+    ],
+    "accounts": [
+        { "id": 1, "userId": 1, "title": "Личный Сбер", "initialBalance": 0, "createdAt": "2024-11-15T17:00:00.000Z" },
+        { "id": 2, "userId": 1, "title": "Зарплатная Альфа", "initialBalance": 0, "createdAt": "2024-11-15T17:00:00.000Z" }
+    ],
+    "transfers": [
+        { "id": 1, "userId": 1, "fromAccountId": 2, "toAccountId": 1, "amount": 10000, "createdAt": "2024-11-15T17:12:00.000Z" }
+    ],
+    "categories": [
+        { "id": 1, "userId": 1, "type": "income", "parentId": null, "title": "Зарплата", "createdAt": "2024-11-13T17:00:00.000Z" },
+        { "id": 2, "userId": 1, "type": "income", "parentId": 1, "title": "Завод", "createdAt": "2024-11-13T17:00:00.000Z" },
+        { "id": 3, "userId": 1, "type": "income", "parentId": 1, "title": "Темка", "createdAt": "2024-11-13T17:00:00.000Z" },
+        { "id": 4, "userId": 1, "type": "expense", "parentId": null, "title": "Рестораны", "createdAt": "2024-11-13T17:00:00.000Z" },
+        { "id": 5, "userId": 1, "type": "expense", "parentId": 4, "title": "Вкусно и Точка", "createdAt": "2024-11-13T17:00:00.000Z" },
+        { "id": 6, "userId": 1, "type": "expense", "parentId": null, "title": "Такси", "createdAt": "2024-11-13T17:00:00.000Z" }
+    ]
+}
